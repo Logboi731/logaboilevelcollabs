@@ -4,7 +4,7 @@ body {
 }
 
 .background-container {
-    height: 100vh; /* Adjust the height as needed */
+    height: 100vh; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,7 @@ body {
 }
 
 .background-image {
-    background-image: url('/bgtransp.png'); /* Replace with your actual image path */
+    background-image: url('/bgtransp.png');
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -20,7 +20,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; /* Ensure it's behind other content */
+    z-index: -1; 
 }
 
 h1 {
@@ -28,7 +28,7 @@ h1 {
     font-family: Arial, sans-serif;
     font-size: 36px;
     position: relative;
-    z-index: 1; /* Ensure it's above the background image */
+    z-index: 1; /* 
     padding: 20px;
-    background: rgba(255, 255, 255, 0.7); /* Example: Add a semi-transparent background to improve readability */
+    background: rgba(255, 255, 255, 0.7); 
 }
