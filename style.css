@@ -1,3 +1,36 @@
 h1 {
   text-align: center;
 }
+
+body {
+    background: linear-gradient(to bottom, #ff0000, #404040);
+    background-size: 100% 200%;
+    animation: flip-bg 6s infinite linear;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+@keyframes flip-bg {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 0 100%;
+        transform: scaleY(-1);
+    }
+    100% {
+        background-position: 0 200%;
+        transform: scaleY(1);
+    }
+}
+
+h1 {
+    color: navy;
+    text-align: center;
+    padding: 20px; /* Add some padding to center the text */
+    margin-top: 100px; /* Example: adjust as needed for vertical centering */
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+}
+
+/* Additional styling can be added here as needed */
