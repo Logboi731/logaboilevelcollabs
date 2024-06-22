@@ -1,36 +1,31 @@
-h1 {
-  text-align: center;
-}
-
 body {
-    background: linear-gradient(to bottom, #ff0000, #404040);
-    background-size: 100% 200%;
-    animation: flip-bg 6s infinite linear;
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
+    margin: 0;
+    padding: 0;
 }
 
-@keyframes flip-bg {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 0 100%;
-        transform: scaleY(-1);
-    }
-    100% {
-        background-position: 0 200%;
-        transform: scaleY(1);
-    }
+.background-container {
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #ff0000, #404040); /* Static gradient */
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.background-image {
+    position: relative;
+    z-index: 1; /* Ensure it's above the background gradient */
 }
 
 h1 {
     color: navy;
     text-align: center;
-    padding: 20px; /* Add some padding to center the text */
-    margin-top: 100px; /* Example: adjust as needed for vertical centering */
     font-family: Arial, sans-serif;
     font-size: 36px;
+    z-index: 2; /* Ensure it's above the background gradient */
+    position: relative;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.7); /* Example: Add a semi-transparent background to improve readability */
 }
-
-/* Additional styling can be added here as needed */
