@@ -8,24 +8,27 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, #ff0000, #404040); /* Static gradient */
-    background-size: cover;
-    background-repeat: no-repeat;
     overflow: hidden;
 }
 
 .background-image {
-    position: relative;
-    z-index: 1; /* Ensure it's above the background gradient */
+    background-image: url('/bgtransp.png'); /* Replace with your actual image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensure it's behind other content */
 }
 
 h1 {
-    color: navy;
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: 36px;
-    z-index: 2; /* Ensure it's above the background gradient */
     position: relative;
+    z-index: 1; /* Ensure it's above the background image */
     padding: 20px;
     background: rgba(255, 255, 255, 0.7); /* Example: Add a semi-transparent background to improve readability */
 }
